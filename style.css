@@ -1,0 +1,61 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+@keyframes blink {
+    0% {color: #FE4A49;}
+    100% {color: #ff2d2d;}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Akira expanded", sans-serif;
+
+}
+
+body {
+    background-image: url(res/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#my_logo {
+    width: 52px; 
+    position: relative;
+    left: 50px;
+    margin-right: auto; /* umieszcza logo po lewej */
+}
+
+#menu_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+#menu {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+#menu a{
+    margin: 0px 35px 0px 35px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #252525;
+}
+
+#title {
+    width: 730px;
+    color: #FE4A49;
+    position: absolute;
+    top: 40%; 
+    left: 10%;
+    font-size: 50px;
+}
+
+#author {
+    animation: blink 3s alternate infinite ease;
+}
